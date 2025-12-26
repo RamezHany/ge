@@ -3,7 +3,7 @@ FROM ubuntu:22.04
 RUN apt-get update && apt-get install -y wget tar curl
 
 # تحميل النسخة التنفيذية
-RUN wget -O /usr/local/bin/ollama https://github.com/ollama/ollama/releases/download/v0.13.5/ollama-linux-amd64
+RUN wget -O /usr/local/bin/ollama https://github.com/ollama/ollama/releases/download/v0.13.5/ollama-linux-amd64.tgz
 RUN chmod +x /usr/local/bin/ollama
 
 # إنشاء مجلد لتخزين الموديلات
